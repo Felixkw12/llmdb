@@ -7,6 +7,23 @@ This project uses [Calendar Versioning](https://calver.org/) with the format `YY
 
 <!-- changelog -->
 
+## [2026.10.3](https://github.com/agentjido/llmdb/compare/2026.10.2...2026.10.3) (2026-10-12)
+
+
+
+
+### Features:
+
+* azure: add Microsoft-Decision-1 evaluation metadata (#349) by neilberkman
+
+* azure: add Microsoft Decision 1 evaluation metadata by neilberkman
+
+### Bug Fixes:
+
+* expose Sonnet 5.5 between-tools thinking mode (#353) by mikehostetler
+
+* correct DeepInfra model lifecycle metadata (#352) by mikehostetler
+
 ## [2026.10.2](https://github.com/agentjido/llmdb/compare/2026.10.1...2026.10.2) (2026-10-09)
 
 
