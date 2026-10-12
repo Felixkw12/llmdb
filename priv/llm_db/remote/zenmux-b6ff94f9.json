@@ -13,6 +13,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -56,6 +57,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -203,6 +205,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -246,6 +249,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -372,6 +376,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -422,6 +427,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -485,6 +491,7 @@
         "image",
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -517,6 +524,76 @@
     },
     {
       "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 8192,
+      "created": 1790228933,
+      "display_name": "Gemini 3.8 Flash TTS",
+      "id": "google/gemini-3.8-flash-tts",
+      "input_modalities": [
+        "text"
+      ],
+      "max_tokens": 8192,
+      "object": "model",
+      "output_modalities": [
+        "speech"
+      ],
+      "owned_by": "google",
+      "pricings": {
+        "audio": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 18
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1
+          }
+        ]
+      },
+      "publish_time": "2026-09-24"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 8192,
+      "created": 1790228855,
+      "display_name": "Gemini 3.8 Flash Lite TTS",
+      "id": "google/gemini-3.8-flash-lite-tts",
+      "input_modalities": [
+        "text"
+      ],
+      "max_tokens": 8192,
+      "object": "model",
+      "output_modalities": [
+        "speech"
+      ],
+      "owned_by": "google",
+      "pricings": {
+        "audio": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 12
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1
+          }
+        ]
+      },
+      "publish_time": "2026-09-24"
+    },
+    {
+      "capabilities": {
         "reasoning": true
       },
       "context_length": 1050000,
@@ -528,6 +605,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -653,6 +731,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -776,6 +855,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -826,6 +906,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -891,6 +972,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -942,6 +1024,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1062,6 +1145,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1111,6 +1195,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 500000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1212,6 +1297,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 1000000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1256,6 +1342,7 @@
         "video",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1306,6 +1393,7 @@
         "text",
         "video"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1347,6 +1435,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1397,6 +1486,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 1048576,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1447,6 +1537,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1550,6 +1641,7 @@
         "image",
         "text"
       ],
+      "max_tokens": 384000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1738,6 +1830,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1885,6 +1978,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1930,6 +2024,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -1982,6 +2077,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2034,6 +2130,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2119,6 +2216,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2181,6 +2279,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2243,6 +2342,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2286,6 +2386,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 1000000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2366,6 +2467,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2410,6 +2512,7 @@
         "video",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2576,6 +2679,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2636,6 +2740,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2677,6 +2782,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2721,6 +2827,7 @@
         "video",
         "audio"
       ],
+      "max_tokens": 393100,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2766,6 +2873,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2814,6 +2922,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2863,6 +2972,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 500000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -2965,6 +3075,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3025,6 +3136,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 384000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3333,6 +3445,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3454,6 +3567,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3499,6 +3613,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3674,6 +3789,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -3735,6 +3851,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4047,6 +4164,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4259,6 +4377,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4321,6 +4440,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4366,6 +4486,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4418,6 +4539,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4468,6 +4590,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 262144,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4518,6 +4641,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4647,6 +4771,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4776,6 +4901,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -4905,6 +5031,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 500000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5011,6 +5138,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5086,6 +5214,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5127,6 +5256,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5170,6 +5300,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5261,6 +5392,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5329,6 +5461,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5397,6 +5530,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5465,6 +5599,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5555,6 +5690,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5605,6 +5741,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 262144,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5655,6 +5792,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 262144,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5705,6 +5843,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5769,6 +5908,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -5921,6 +6061,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 512000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6018,6 +6159,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6061,6 +6203,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6124,6 +6267,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6172,6 +6316,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6274,6 +6419,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6349,6 +6495,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6411,6 +6558,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6490,6 +6638,7 @@
         "image",
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6540,6 +6689,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 1000000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6644,6 +6794,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6723,6 +6874,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6825,6 +6977,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 8192,
       "object": "model",
       "output_modalities": [
         "speech"
@@ -6875,6 +7028,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -6980,6 +7134,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7135,6 +7290,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 262144,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7185,6 +7341,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7247,6 +7404,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7458,6 +7616,7 @@
         "video",
         "text"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7502,6 +7661,7 @@
         "file",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7655,6 +7815,7 @@
         "video",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7759,6 +7920,7 @@
         "text",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7793,6 +7955,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7841,6 +8004,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7891,6 +8055,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7941,6 +8106,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -7989,6 +8155,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8030,6 +8197,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8133,6 +8301,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 30000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8218,6 +8387,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 30000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8304,6 +8474,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8408,6 +8579,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8487,6 +8659,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 1024000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8549,6 +8722,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8703,6 +8877,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8814,6 +8989,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -8878,6 +9054,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9031,6 +9208,7 @@
         "video",
         "audio"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9172,6 +9350,7 @@
         "video",
         "audio"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9312,6 +9491,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9452,6 +9632,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9590,6 +9771,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9654,6 +9836,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9758,6 +9941,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9808,6 +9992,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9870,6 +10055,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9904,6 +10090,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 2048,
       "object": "model",
       "output_modalities": [
         "text"
@@ -9940,6 +10127,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10017,6 +10205,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10065,6 +10254,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10237,6 +10427,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10417,6 +10608,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10467,6 +10659,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10579,6 +10772,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10685,6 +10879,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10728,6 +10923,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10779,6 +10975,7 @@
         "video",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10883,6 +11080,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -10987,6 +11185,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11089,6 +11288,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 8000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11132,6 +11332,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 256000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11175,6 +11376,7 @@
         "image",
         "text"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11273,6 +11475,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11322,6 +11525,7 @@
         "text",
         "image"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11498,6 +11702,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11548,6 +11753,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11612,6 +11818,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11653,6 +11860,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11835,6 +12043,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 64000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -11989,6 +12198,7 @@
         "image",
         "video"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12209,6 +12419,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12250,6 +12461,7 @@
       "input_modalities": [
         "audio"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "transcription"
@@ -12279,6 +12491,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12329,6 +12542,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12379,6 +12593,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12445,6 +12660,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 96000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12625,6 +12841,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 96000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12806,6 +13023,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12879,6 +13097,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -12952,6 +13171,7 @@
         "audio",
         "video"
       ],
+      "max_tokens": 65535,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13063,6 +13283,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 100000,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13106,6 +13327,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13149,6 +13371,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13192,6 +13415,7 @@
         "text",
         "file"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13275,6 +13499,7 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 4096,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13311,6 +13536,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 16384,
       "object": "model",
       "output_modalities": [
         "text"
@@ -13354,6 +13580,7 @@
         "image",
         "file"
       ],
+      "max_tokens": 16384,
       "object": "model",
       "output_modalities": [
         "text"
