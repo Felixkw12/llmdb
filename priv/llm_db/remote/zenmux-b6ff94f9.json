@@ -4,6 +4,79 @@
       "capabilities": {
         "reasoning": false
       },
+      "context_length": 2000,
+      "created": 1791861343,
+      "display_name": "inclusionAI: LLaDA-Image",
+      "id": "inclusionai/llada-image",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "image"
+      ],
+      "owned_by": "inclusionai",
+      "pricings": {},
+      "publish_time": "2026-10-13"
+    },
+    {
+      "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1048576,
+      "created": 1791858508,
+      "display_name": "Meta: Muse Wonder",
+      "id": "meta/muse-wonder-1.0",
+      "input_modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "max_tokens": 128000,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "meta",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 20
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.2
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 4
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.0025
+          }
+        ]
+      },
+      "publish_time": "2026-10-13"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
       "context_length": 256000,
       "created": 1791447476,
       "display_name": "Mistral: Mistral Large 4",
@@ -364,6 +437,40 @@
     },
     {
       "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 1000000,
+      "created": 1790664284,
+      "display_name": "Qwen: Qwen-Audio-3.1-ASR-Flash",
+      "id": "qwen/qwen-audio-3.1-asr-flash",
+      "input_modalities": [
+        "audio"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "transcription"
+      ],
+      "owned_by": "qwen",
+      "pricings": {
+        "audio_input": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.12
+          }
+        ],
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.41
+          }
+        ]
+      },
+      "publish_time": "2026-09-29"
+    },
+    {
+      "capabilities": {
         "reasoning": true
       },
       "context_length": 1000000,
@@ -544,14 +651,14 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 18
+            "value": 9
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 1
+            "value": 0.5
           }
         ]
       },
@@ -579,14 +686,14 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 12
+            "value": 6
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 1
+            "value": 0.5
           }
         ]
       },
@@ -3883,7 +3990,9 @@
       "publish_time": "2026-08-01"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 1000000,
       "created": 1777000285,
       "display_name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -3891,11 +4000,50 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 384000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "deepseek",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.66
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.32
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.007
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.014
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.22
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.44
+          }
+        ]
+      },
       "publish_time": "2026-07-31"
     },
     {
@@ -6465,7 +6613,9 @@
       "publish_time": "2026-05-19"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 262144,
       "created": 1778304211,
       "display_name": "inclusionAI: Ring-2.6-1T",
@@ -6473,11 +6623,35 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 65536,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "inclusionai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.0984625
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0263631
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.1318155
+          }
+        ]
+      },
       "publish_time": "2026-05-09"
     },
     {
@@ -7002,19 +7176,45 @@
       "publish_time": "2026-04-24"
     },
     {
-      "capabilities": {},
-      "context_length": 262144,
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 1048576,
       "created": 1774580060,
       "display_name": "inclusionAI: Ling-2.6-1T",
       "id": "inclusionai/ling-2.6-1t",
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "inclusionai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.0984625
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0263631
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.1318155
+          }
+        ]
+      },
       "publish_time": "2026-04-23"
     },
     {
@@ -7227,19 +7427,45 @@
       "publish_time": "2026-04-23"
     },
     {
-      "capabilities": {},
-      "context_length": 128000,
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 262144,
       "created": 1774580297,
       "display_name": "inclusionAI: Ling-2.6-flash",
       "id": "inclusionai/ling-2.6-flash",
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "inclusionai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.3
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.02
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.1
+          }
+        ]
+      },
       "publish_time": "2026-04-22"
     },
     {
@@ -9810,7 +10036,9 @@
       "publish_time": "2026-02-13"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 204800,
       "created": 1770954580,
       "display_name": "MiniMax: MiniMax M2.5 highspeed",
@@ -9818,11 +10046,42 @@
       "input_modalities": [
         "text"
       ],
+      "max_tokens": 131072,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "minimax",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2.4
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.03
+          }
+        ],
+        "input_cache_write": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.375
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.6
+          }
+        ]
+      },
       "publish_time": "2026-02-13"
     },
     {
@@ -10293,7 +10552,9 @@
       "publish_time": "2026-01-19"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 400000,
       "created": 1766111668,
       "display_name": "OpenAI: GPT-5.2-Codex",
@@ -10303,11 +10564,42 @@
         "image",
         "file"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 14
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.175
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.75
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.014
+          }
+        ]
+      },
       "publish_time": "2026-01-15"
     },
     {
@@ -11429,7 +11721,9 @@
       "publish_time": "2025-11-24"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": false
+      },
       "context_length": 400000,
       "created": 1763084785,
       "display_name": "OpenAI: GPT-5.1-Codex",
@@ -11438,15 +11732,48 @@
         "text",
         "image"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 10
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.125
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.25
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.014
+          }
+        ]
+      },
       "publish_time": "2025-11-13"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 400000,
       "created": 1763084812,
       "display_name": "OpenAI: GPT-5.1-Codex-Mini",
@@ -11455,11 +11782,42 @@
         "image",
         "text"
       ],
+      "max_tokens": 100000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.025
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.25
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.014
+          }
+        ]
+      },
       "publish_time": "2025-11-13"
     },
     {
@@ -12392,7 +12750,9 @@
       "publish_time": "2025-09-23"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 400000,
       "created": 1760322534,
       "display_name": "OpenAI: GPT-5 Codex",
@@ -12401,11 +12761,42 @@
         "text",
         "image"
       ],
+      "max_tokens": 128000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 10
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.125
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.25
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.014
+          }
+        ]
+      },
       "publish_time": "2025-09-23"
     },
     {
@@ -12632,7 +13023,9 @@
       "publish_time": "2025-08-07"
     },
     {
-      "capabilities": {},
+      "capabilities": {
+        "reasoning": true
+      },
       "context_length": 200000,
       "created": 1755152632,
       "display_name": "Anthropic: Claude Opus 4.1",
@@ -12642,11 +13035,56 @@
         "text",
         "file"
       ],
+      "max_tokens": 32000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "anthropic",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 75
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.5
+          }
+        ],
+        "input_cache_write_1_h": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 30
+          }
+        ],
+        "input_cache_write_5_min": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 18.75
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 15
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.01
+          }
+        ]
+      },
       "publish_time": "2025-08-05"
     },
     {
