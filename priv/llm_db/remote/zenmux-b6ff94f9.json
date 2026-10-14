@@ -32,7 +32,8 @@
         "file",
         "image",
         "text",
-        "video"
+        "video",
+        "audio"
       ],
       "max_tokens": 65536,
       "object": "model",

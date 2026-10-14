@@ -1,8 +1,8 @@
 {
   "last_modified": null,
   "source_url": "https://api.openai.com/v1/models",
-  "sha256": "5eb4069cadc72f555b071012378540af071e28a9d86ea7587f24e47522157a5f",
+  "sha256": "1f2e3ecd9ff7006516424fc921e58ffc5dfd7b2ac2b169f908b420587920d799",
   "size_bytes": 22498,
-  "downloaded_at": "2026-10-14T01:20:11.309274Z",
+  "downloaded_at": "2026-10-14T04:30:09.708487Z",
   "etag": null
 }
