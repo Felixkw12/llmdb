@@ -7,6 +7,15 @@ This project uses [Calendar Versioning](https://calver.org/) with the format `YY
 
 <!-- changelog -->
 
+## [2026.10.5](https://github.com/agentjido/llmdb/compare/2026.10.4...2026.10.5) (2026-10-14)
+
+
+
+
+### Features:
+
+* reflection: add Beam provider and model metadata (#360) by mikehostetler
+
 ## [2026.10.4](https://github.com/agentjido/llmdb/compare/2026.10.3...2026.10.4) (2026-10-14)
 
 
