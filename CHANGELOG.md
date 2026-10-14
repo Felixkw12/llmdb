@@ -7,6 +7,21 @@ This project uses [Calendar Versioning](https://calver.org/) with the format `YY
 
 <!-- changelog -->
 
+## [2026.10.4](https://github.com/agentjido/llmdb/compare/2026.10.3...2026.10.4) (2026-10-14)
+
+
+
+
+### Features:
+
+* meta: add Muse Wonder metadata and cached model discovery (#358) by mikehostetler
+
+* google: add Gemini 4 Argon metadata (#357) by neilberkman
+
+### Bug Fixes:
+
+* openrouter: price Mistral Medium 3.5 cache reads (#356) by mikehostetler
+
 ## [2026.10.3](https://github.com/agentjido/llmdb/compare/2026.10.2...2026.10.3) (2026-10-12)
 
 
