@@ -565,6 +565,24 @@
       "version": "3.0"
     },
     {
+      "description": "Gemini 4 Argon",
+      "displayName": "Gemini 4 Argon",
+      "inputTokenLimit": 1048576,
+      "maxTemperature": 2,
+      "name": "models/gemini-4-argon",
+      "outputTokenLimit": 32768,
+      "supportedGenerationMethods": [
+        "generateContent",
+        "countTokens",
+        "batchGenerateContent"
+      ],
+      "temperature": 1,
+      "thinking": true,
+      "topK": 64,
+      "topP": 0.95,
+      "version": "3.0"
+    },
+    {
       "description": "Lyria 3 30s model Preview",
       "displayName": "Lyria 3 Clip Preview",
       "inputTokenLimit": 1048576,

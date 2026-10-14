@@ -91263,7 +91263,7 @@
           "MaaP"
         ],
         "toolResponseEnd": null,
-        "maapSurchargeType": null,
+        "maapSurchargeType": "model",
         "architecture": null,
         "modalitiesSupported": null,
         "maasInference": true,
@@ -91365,6 +91365,7 @@
         "trademarkInformation": null,
         "parameterCount": null,
         "trainingCorpusSize": null,
+        "previewType": null,
         "aotManifest": null,
         "inferenceSupportedEnvs": null,
         "inferenceRecommendedSkus": [
@@ -91396,6 +91397,7 @@
         "licenseDescription": "Use of this Azure Direct Model is subject to applicable [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/welcome/welcomepage) including the Universal License Terms for Microsoft Generative AI Services and the service-specific terms for Azure AI Foundry Models. If this Azure Direct Model is designated as Preview, its use is also subject to the [Supplemental Terms for Azure Previews](https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/). When you deploy this model to Managed Compute, your use of the model is subject to the License Terms available at <https://aka.ms/cohere-azure-terms>.",
         "lifecycle": "Generally available",
         "maap-surcharge": "true",
+        "maap-surcharge-type": "model",
         "maas-inference": "true",
         "maxOutputTokens": "4096",
         "notes": "# Responsible AI considerations\n\n## Safety techniques\nThe provider has not supplied this information.\n\n## Safety evaluations\nThe provider has not supplied this information.\n\n## Known limitations\nThe provider has not supplied this information.\n\n# Acceptable use\n\n## Acceptable use policy\nThe provider has not supplied this information.",
@@ -91439,17 +91441,19 @@
       },
       "isAnonymous": false,
       "loraConfig": null,
+      "managedBy": null,
       "mimeType": "application/json",
       "modelFormat": "CUSTOM",
       "modelFramework": "Custom",
       "modelFrameworkVersion": null,
-      "modifiedTime": "2026-08-21T21:36:23.1936582Z",
+      "modifiedTime": "2026-10-13T06:31:49.3038565Z",
       "name": "embed-v-4-0",
       "orginAssetId": null,
       "parentModelId": null,
       "provisioningState": "Succeeded",
       "runId": null,
       "sourceData": null,
+      "systemManaged": false,
       "unpack": false,
       "updatedTime": "0001-01-01T00:00:00+00:00",
       "url": "https://amlchipppqtiquse01.blob.core.windows.net/tempmodels21/embed-v4/",
@@ -91470,9 +91474,9 @@
     "relationships": [],
     "relevancyScore": 1.0,
     "resourceType": "Registry",
-    "schemaId": "33abe2f8-17ff-564e-b2c9-5997128845a1",
+    "schemaId": "0f20e8e4-eef3-5bea-b037-3e19a97d4fa3",
     "type": "models",
-    "updateSequence": 22,
+    "updateSequence": 26,
     "usage": {
       "popularity": 70.23,
       "totalCount": 0
@@ -181842,7 +181846,7 @@
     "annotations": {
       "archived": false,
       "datasets": [],
-      "description": "MAI Code 1.1 Flash\n",
+      "description": "# MAI Code 1.1 Flash, optimized for on-device inference\n\n## Overview\n\nMAI Code 1.1 Flash is a coding-optimized mixture-of-experts model from Microsoft AI, designed for agentic software development workflows.\n\nThe model is optimized for efficient local inference while supporting long-context coding tasks such as code generation, codebase exploration, debugging, testing, and tool use.\n\n## Model details\n\n| Property | Details |\n| --- | --- |\n| Model | MAI Code 1.1 Flash |\n| Provider | Microsoft |\n| Model type | Mixture of experts |\n| Total parameters | 137.9B |\n| Active parameters | 6.8B |\n| Primary use | Coding and agentic software development |\n| Deployment | Local inference |\n| Context length | Up to 256K tokens |\n| Model size | 53 GB |\n| Inference optimizations | Quantization and speculative decoding |\n\n## Capabilities\n\nMAI Code 1.1 Flash is optimized for coding and agentic software development tasks, including:\n\n- Code generation and modification\n- Codebase exploration and understanding\n- Bug fixing\n- Test generation and iteration\n- Tool use in agentic workflows\n- Development documentation\n\n## On-device inference\n\nMAI Code 1.1 Flash is optimized for on-device inference, enabling the model to execute locally on supported hardware while retaining the long-context capabilities needed for coding and agentic workloads.\n\nThe model supports context lengths of up to 256K tokens and has an on-device model size of 53 GB. Memory requirements increase with context length due in part to the key-value cache used during inference. In published testing, peak memory usage reached 75.5 GB at 256K context.\n\nThe on-device implementation uses inference optimizations including quantization and speculative decoding to improve memory efficiency and runtime performance.\n\n## Quantization\n\nThe on-device version of MAI Code 1.1 Flash uses mixed-precision weight quantization to reduce the memory required to run the model locally while preserving strong coding capability. Rather than representing the model uniformly at higher precision, mixed-precision quantization uses reduced numerical precision to achieve a better balance between model footprint and quality. The resulting on-device model averages approximately 3.3 bits per weight and reduces the model footprint to 53 GB, while retaining support for the full 256K-token context window.\n\nMaintaining quality under quantization is particularly important for coding and agentic workloads. Small changes in model output can affect code correctness, identifiers, tool calls, or patches, so reducing model size must be evaluated against successful completion of real coding tasks, not memory savings alone. The quantized model therefore undergoes end-to-end coding evaluation to validate that its reduced footprint preserves the capabilities needed for local agentic development.\n\n## Speculative decoding\n\nThe on-device implementation of MAI Code 1.1 Flash uses DFlash2 sliding-window speculative decoding to improve inference performance while maintaining model quality. Speculative decoding uses a lightweight (700M parameter sized) semi-autoregressive drafter to predict candidate tokens that are verified by the target model. When multiple candidate tokens are accepted, the model can advance through generation more efficiently than producing every token independently. Depending on the workload and inference configuration, DFlash2 can deliver up to 2× faster generation.\n\nFor on-device agentic coding, this optimization complements quantization: quantization reduces the model footprint, while speculative decoding targets generation performance. Together, these techniques help make a large coding model practical for interactive local inference.\n\n## Performance\n\nMAI Code 1.1 Flash maintains comparable coding quality following optimization for local inference.\n\n| Benchmark | Dataset size | MAI Code 1.1 Flash | MAI Code 1.1 Flash On-device |\n| --- | ---: | ---: | ---: |\n| SWE-Bench Verified | 500 | 72.6% | 70.80% |\n| Terminal-Bench 2.1 | 89 | 62.9% | 66.29% |\n\nBenchmark results may vary based on inference configuration and evaluation methodology.\n\nFor additional performance measurements, including throughput across different context lengths and details on speculative decoding, see [Bringing local models and sandboxed tools to Windows and GitHub Copilot](https://commandline.microsoft.com/local-models-sandboxed-tools-github-windows/).\n",
       "invisibleUntil": "0001-01-01T00:00:00+00:00",
       "labels": [
         "default",
@@ -181966,7 +181970,7 @@
         "hiddenLayerScanned": null,
         "modelPath": null,
         "inferenceComputeAllowed": null,
-        "licenseDescription": "MIT License at https://opensource.org/license/mit",
+        "licenseDescription": "MIT License Copyright (c) Microsoft Corporation. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "fineTuneOnlyModel": null,
         "longContextRetirementDate": null,
         "contactInformation": null,
@@ -181981,10 +181985,16 @@
         "outputModalities": null,
         "trademarkInformation": null,
         "parameterCount": null,
+        "githubCopilotLocal": true,
         "trainingCorpusSize": null,
         "previewType": null,
         "aotManifest": null,
         "inferenceSupportedEnvs": null,
+        "githubCopilotLocalRequirements": {
+          "downloadBytes": 56688835352,
+          "peakDiskBytes": 56688835352,
+          "recommendedVramBytes": 96636764160
+        },
         "inferenceRecommendedSkus": null,
         "maasFinetuningDeployRegions": null,
         "notes": null,
@@ -181995,7 +182005,7 @@
         "displayName": "MAI Code 1.1 Flash",
         "keywords": "Coding",
         "license": "MIT",
-        "licenseDescription": "MIT License at https://opensource.org/license/mit",
+        "licenseDescription": "MIT License Copyright (c) Microsoft Corporation. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "maxOutputTokens": "128000",
         "modelCapabilities": "tool-calling",
         "model_flavor": "GGUF",
@@ -182004,9 +182014,9 @@
         "textContextWindow": "256000"
       }
     },
-    "assetId": "azureml://registries/azureml/models/MAI-Code-1.1-Flash-On-Device/versions/1",
+    "assetId": "azureml://registries/azureml/models/MAI-Code-1.1-Flash-On-Device/versions/2",
     "entityContainerId": "b98c40bc-36d6-4175-b131-bad4502fe1a3",
-    "entityId": "azureml://registries/b98c40bc-36d6-4175-b131-bad4502fe1a3/type/models/objectId/MAI-Code-1.1-Flash-On-Device/version/1",
+    "entityId": "azureml://registries/b98c40bc-36d6-4175-b131-bad4502fe1a3/type/models/objectId/MAI-Code-1.1-Flash-On-Device/version/2",
     "entityObjectId": "MAI-Code-1.1-Flash-On-Device",
     "entityResourceName": "azureml",
     "fragmentId": null,
@@ -182016,7 +182026,7 @@
     "kind": "Versioned",
     "properties": {
       "allowedDeploymentTemplates": [],
-      "alphanumericVersion": "1",
+      "alphanumericVersion": "2",
       "artifactProfile": null,
       "creationContext": {
         "createdBy": {
@@ -182025,12 +182035,12 @@
           "userPrincipalName": null,
           "userTenantId": "00000000-0000-0000-0000-000000000000"
         },
-        "createdTime": "2026-10-09T18:32:14.2398251+00:00",
+        "createdTime": "2026-10-13T17:13:43.6212571+00:00",
         "creationSource": null
       },
       "derivedModelIds": null,
       "experimentName": null,
-      "id": "MAI-Code-1.1-Flash-On-Device:1",
+      "id": "MAI-Code-1.1-Flash-On-Device:2",
       "intellectualProperty": {
         "publisher": null
       },
@@ -182041,7 +182051,7 @@
       "modelFormat": "CUSTOM",
       "modelFramework": "Custom",
       "modelFrameworkVersion": null,
-      "modifiedTime": "2026-10-09T18:32:12.689789Z",
+      "modifiedTime": "2026-10-13T19:01:01.5979343Z",
       "name": "MAI-Code-1.1-Flash-On-Device",
       "orginAssetId": null,
       "parentModelId": null,
@@ -182054,19 +182064,19 @@
       "url": null,
       "userProperties": {},
       "variantInfo": null,
-      "version": 1,
+      "version": 2,
       "weightType": null
     },
     "relationships": [],
     "relevancyScore": 1.0,
     "resourceType": "Registry",
-    "schemaId": "0f20e8e4-eef3-5bea-b037-3e19a97d4fa3",
+    "schemaId": "43e0c23d-e23c-52e7-8bb9-b9971031caa9",
     "type": "models",
-    "updateSequence": 2,
+    "updateSequence": 6,
     "usage": {
       "popularity": 1.0,
       "totalCount": 0
     },
-    "version": "1"
+    "version": "2"
   }
 ]
