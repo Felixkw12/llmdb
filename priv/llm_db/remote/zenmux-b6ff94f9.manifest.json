@@ -1,8 +1,8 @@
 {
   "last_modified": null,
   "source_url": "https://zenmux.ai/api/v1/models",
-  "sha256": "acfb324f21053089abc4f052c21dcffd991783b6d416c8ae3765bd4be2ce4d64",
-  "size_bytes": 319309,
-  "downloaded_at": "2026-10-14T04:30:11.603489Z",
-  "etag": null
+  "sha256": "9f3a3ba6272cb15192da62fa087faa20951383518058ad1cd1f3cfa0775b88fe",
+  "etag": null,
+  "downloaded_at": "2026-10-15T04:12:50.112042Z",
+  "size_bytes": 319305
 }

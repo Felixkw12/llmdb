@@ -1,8 +1,8 @@
 {
   "last_modified": null,
   "source_url": "https://models.dev/api.json",
-  "sha256": "1522efd6fff037ff64aefed5df8f37220df754e757925ab23541c2bda0259bf2",
-  "size_bytes": 9641914,
-  "downloaded_at": "2026-10-14T04:30:08.089927Z",
-  "etag": "\"66745ef16b76f6036c0073d493725d91\""
+  "sha256": "571e2ebc62f494e3fbbdc0777b851e621dbaf368e1fe1550241c924c3c5415f6",
+  "etag": "\"6fd3eac6175c87bf760a6b9838eace91\"",
+  "downloaded_at": "2026-10-15T04:12:44.708132Z",
+  "size_bytes": 9695711
 }

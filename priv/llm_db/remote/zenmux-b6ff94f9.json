@@ -787,7 +787,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": "272",
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
@@ -811,7 +811,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": "272",
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
@@ -835,7 +835,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": "272",
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
@@ -859,7 +859,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": "272",
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
