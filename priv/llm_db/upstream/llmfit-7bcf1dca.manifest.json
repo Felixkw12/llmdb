@@ -1,8 +1,8 @@
 {
   "last_modified": null,
   "source_url": "https://raw.githubusercontent.com/AlexsJones/llmfit/main/llmfit-core/data/hf_models.json",
-  "sha256": "ac197ebdc729fc742dfdc3dc7de4e214cac84a8c2257d431e1931e3f8629e95e",
-  "etag": "\"9cdccc2ac4f22215e5aaa8aff9a39c52ea10ce60a3472cccf1505df509780a32\"",
-  "downloaded_at": "2026-10-08T05:39:00.934917Z",
-  "size_bytes": 15153612
+  "sha256": "aff0b311231c2b89aa796225db54bac8bd8f44ad73aa71f6382ed14aacabe168",
+  "etag": "\"8a2dc013002b65a938500537180dfdf38cbb057912ba85b5072a0d964f8b6d54\"",
+  "downloaded_at": "2026-10-16T04:08:43.855356Z",
+  "size_bytes": 15922575
 }

@@ -4,6 +4,41 @@
       "capabilities": {
         "reasoning": false
       },
+      "context_length": 12800,
+      "created": 1792061858,
+      "display_name": "MiniMax: MiniMax H3 Fast",
+      "id": "minimax/minimax-h3-fast",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "video"
+      ],
+      "owned_by": "minimax",
+      "pricings": {
+        "audio_and_video": [
+          {
+            "currency": "USD",
+            "unit": "perSecond",
+            "value": 0.023
+          },
+          {
+            "currency": "USD",
+            "unit": "perSecond",
+            "value": 0.04
+          }
+        ]
+      },
+      "publish_time": "2026-10-15"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
       "context_length": 2000,
       "created": 1791861343,
       "display_name": "inclusionAI: LLaDA-Image",
@@ -2683,28 +2718,28 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.5
+            "value": 0.25
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.03
+            "value": 0.015
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.15
+            "value": 0.075
           }
         ],
         "web_search": [
           {
             "currency": "USD",
             "unit": "perCount",
-            "value": 0.01
+            "value": 0.005
           }
         ]
       },

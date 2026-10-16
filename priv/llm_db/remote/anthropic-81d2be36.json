@@ -65,6 +65,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": true
             },
@@ -148,6 +151,9 @@
           "supported": true,
           "types": {
             "adaptive": {
+              "supported": true
+            },
+            "between_tools": {
               "supported": true
             },
             "disabled": {
@@ -235,6 +241,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": false
             },
@@ -319,6 +328,9 @@
           "types": {
             "adaptive": {
               "supported": true
+            },
+            "between_tools": {
+              "supported": false
             },
             "disabled": {
               "supported": false
@@ -405,6 +417,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": true
             },
@@ -489,6 +504,9 @@
           "types": {
             "adaptive": {
               "supported": true
+            },
+            "between_tools": {
+              "supported": false
             },
             "disabled": {
               "supported": true
@@ -575,6 +593,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": false
             },
@@ -659,6 +680,9 @@
           "types": {
             "adaptive": {
               "supported": true
+            },
+            "between_tools": {
+              "supported": false
             },
             "disabled": {
               "supported": true
@@ -745,6 +769,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": true
             },
@@ -829,6 +856,9 @@
           "types": {
             "adaptive": {
               "supported": true
+            },
+            "between_tools": {
+              "supported": false
             },
             "disabled": {
               "supported": true
@@ -915,6 +945,9 @@
             "adaptive": {
               "supported": true
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": true
             },
@@ -998,6 +1031,9 @@
           "supported": true,
           "types": {
             "adaptive": {
+              "supported": false
+            },
+            "between_tools": {
               "supported": false
             },
             "disabled": {
@@ -1085,6 +1121,9 @@
             "adaptive": {
               "supported": false
             },
+            "between_tools": {
+              "supported": false
+            },
             "disabled": {
               "supported": true
             },
@@ -1168,6 +1207,9 @@
           "supported": true,
           "types": {
             "adaptive": {
+              "supported": false
+            },
+            "between_tools": {
               "supported": false
             },
             "disabled": {

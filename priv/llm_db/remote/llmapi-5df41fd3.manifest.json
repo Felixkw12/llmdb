@@ -1,8 +1,8 @@
 {
   "last_modified": null,
   "source_url": "https://api.llmapi.ai/v1/models",
-  "sha256": "6df70c714ad55956523433a113b11016d9f95fd4563fe0cd6ff4f7369e117779",
+  "sha256": "3e7c16391361154a481feebe13e29afec0724352f7482b90d4e468ab6f976513",
   "etag": null,
-  "downloaded_at": "2026-10-15T04:12:42.522991Z",
-  "size_bytes": 799518
+  "downloaded_at": "2026-10-16T04:08:40.134936Z",
+  "size_bytes": 799506
 }
