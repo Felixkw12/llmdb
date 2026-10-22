@@ -7,6 +7,21 @@ This project uses [Calendar Versioning](https://calver.org/) with the format `YY
 
 <!-- changelog -->
 
+## [2026.10.6](https://github.com/agentjido/llmdb/compare/2026.10.5...2026.10.6) (2026-10-22)
+
+
+
+
+### Bug Fixes:
+
+* deepinfra: update GLM-5.3-Flash prices (#368) by mikehostetler
+
+* enrich: copy native Claude reasoning metadata to hosted entries (#367) by neilberkman
+
+* deepinfra: restore default price selection (#364) by mikehostetler
+
+* deepinfra: apply active token price discounts (#363) by mikehostetler
+
 ## [2026.10.5](https://github.com/agentjido/llmdb/compare/2026.10.4...2026.10.5) (2026-10-14)
 
 
