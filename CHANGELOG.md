@@ -7,6 +7,23 @@ This project uses [Calendar Versioning](https://calver.org/) with the format `YY
 
 <!-- changelog -->
 
+## [2026.10.7](https://github.com/agentjido/llmdb/compare/2026.10.6...2026.10.7) (2026-10-26)
+
+
+
+
+### Features:
+
+* inference: add Inference.net model catalog (#371) by mikehostetler
+
+* inference: add Inference.net catalog by mikehostetler
+
+* cheaperinference: add provider catalog (#370) by mikehostetler
+
+### Bug Fixes:
+
+* update catalog tests for refreshed upstream metadata (#369) by Arman Mirkazemi
+
 ## [2026.10.6](https://github.com/agentjido/llmdb/compare/2026.10.5...2026.10.6) (2026-10-22)
 
 
