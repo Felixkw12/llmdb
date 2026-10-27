@@ -2,6 +2,538 @@
   "data": [
     {
       "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1050000,
+      "created": 1793070159,
+      "display_name": "OpenAI: GPT-6.1 Terra",
+      "id": "openai/gpt-6.1-terra",
+      "input_modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "max_tokens": 128000,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "openai",
+      "pricings": {
+        "completion": [
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "0",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 5
+          },
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "272",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 7.5
+          }
+        ],
+        "input_cache_read": [
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "0",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.05
+          },
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "272",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.1
+          }
+        ],
+        "input_cache_write": [
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "0",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1.25
+          },
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "272",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2.5
+          }
+        ],
+        "prompt": [
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "0",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 1
+          },
+          {
+            "conditions": {
+              "prompt_tokens": {
+                "gte": "272",
+                "unit": "kTokens"
+              }
+            },
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.01
+          }
+        ]
+      },
+      "publish_time": "2026-10-27"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 12800,
+      "created": 1792982730,
+      "display_name": "MiniMax: MiniMax H3 Highspeed",
+      "id": "minimax/minimax-h3-highspeed",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "video"
+      ],
+      "owned_by": "minimax",
+      "pricings": {
+        "audio_and_video": [
+          {
+            "currency": "USD",
+            "unit": "perSecond",
+            "value": 0.03
+          }
+        ]
+      },
+      "publish_time": "2026-10-26"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 12800,
+      "created": 1792983814,
+      "display_name": "MiniMax: MiniMax H3 Lite",
+      "id": "minimax/minimax-h3-lite",
+      "input_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "video"
+      ],
+      "owned_by": "minimax",
+      "pricings": {
+        "audio_and_video": [
+          {
+            "currency": "USD",
+            "unit": "perSecond",
+            "value": 0.01625
+          },
+          {
+            "currency": "USD",
+            "unit": "perSecond",
+            "value": 0.026
+          }
+        ]
+      },
+      "publish_time": "2026-10-26"
+    },
+    {
+      "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1048576,
+      "created": 1792778213,
+      "display_name": "MoonshotAI: Kimi K3.1 Pro Highspeed",
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "max_tokens": 1048576,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "moonshotai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 20
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.2
+          }
+        ],
+        "input_cache_write_1_h": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 8
+          }
+        ],
+        "input_cache_write_5_min": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 4
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 4
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.005
+          }
+        ]
+      },
+      "publish_time": "2026-10-23"
+    },
+    {
+      "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1048576,
+      "created": 1792777566,
+      "display_name": "MoonshotAI: Kimi K3.1 Pro",
+      "id": "moonshotai/kimi-k3.1-pro",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "max_tokens": 1048576,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "moonshotai",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 10
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.2
+          }
+        ],
+        "input_cache_write_1_h": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 4
+          }
+        ],
+        "input_cache_write_5_min": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 2
+          }
+        ],
+        "web_search": [
+          {
+            "currency": "USD",
+            "unit": "perCount",
+            "value": 0.005
+          }
+        ]
+      },
+      "publish_time": "2026-10-23"
+    },
+    {
+      "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1000000,
+      "created": 1792409502,
+      "display_name": "MiniMax: MiniMax M3.1-Flash",
+      "id": "minimax/minimax-m3.1-flash",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "max_tokens": 512000,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "minimax",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.6
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.015
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.15
+          }
+        ]
+      },
+      "publish_time": "2026-10-19"
+    },
+    {
+      "capabilities": {
+        "reasoning": true
+      },
+      "context_length": 1000000,
+      "created": 1789013468,
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "id": "deepseek/deepseek-v4.1-flash",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "max_tokens": 384000,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "deepseek",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.3
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.3
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.3
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.3
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.6
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.6
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0015
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0015
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0015
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.0015
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.003
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.003
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.075
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.075
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.075
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.075
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.15
+          },
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0.15
+          }
+        ]
+      },
+      "publish_time": "2026-10-17"
+    },
+    {
+      "capabilities": {
+        "reasoning": false
+      },
+      "context_length": 524288,
+      "created": 1792132430,
+      "display_name": "Atria: Atria Dawn (Free)",
+      "id": "atria-asi/atria-dawn",
+      "input_modalities": [
+        "text"
+      ],
+      "max_tokens": 65536,
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "atria-asi",
+      "pricings": {
+        "completion": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0
+          }
+        ],
+        "input_cache_read": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0
+          }
+        ],
+        "input_cache_write": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0
+          }
+        ],
+        "prompt": [
+          {
+            "currency": "USD",
+            "unit": "perMTokens",
+            "value": 0
+          }
+        ]
+      },
+      "publish_time": "2026-10-16"
+    },
+    {
+      "capabilities": {
         "reasoning": false
       },
       "context_length": 12800,
@@ -185,21 +717,21 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 2.09
+            "value": 4.18
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.07
+            "value": 0.14
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.68
+            "value": 1.36
           }
         ]
       },
@@ -640,7 +1172,7 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.2
+            "value": 0.1
           }
         ],
         "input_cache_write_1_h": [
@@ -1599,74 +2131,25 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.18
+            "value": 0.22
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.012
+            "value": 0.015
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.06
+            "value": 0.075
           }
         ]
       },
       "publish_time": "2026-09-15"
-    },
-    {
-      "capabilities": {
-        "reasoning": false
-      },
-      "context_length": 262144,
-      "created": 1789364855,
-      "display_name": "Atria: Atria Dawn Preview (Free)",
-      "id": "atria-asi/atria-dawn-preview",
-      "input_modalities": [
-        "text"
-      ],
-      "max_tokens": 65536,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "atria-asi",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ],
-        "input_cache_read": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ],
-        "input_cache_write": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ]
-      },
-      "publish_time": "2026-09-14"
     },
     {
       "capabilities": {
@@ -1823,124 +2306,6 @@
         ]
       },
       "publish_time": "2026-09-11"
-    },
-    {
-      "capabilities": {
-        "reasoning": true
-      },
-      "context_length": 1000000,
-      "created": 1789013468,
-      "display_name": "DeepSeek: DeepSeek V4.1 Flash",
-      "id": "deepseek/deepseek-v4.1-flash",
-      "input_modalities": [
-        "image",
-        "text"
-      ],
-      "max_tokens": 384000,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "deepseek",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.6
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.6
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.6
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.6
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 1.2
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 1.2
-          }
-        ],
-        "input_cache_read": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.003
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.003
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.003
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.003
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.006
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.006
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.3
-          },
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.3
-          }
-        ]
-      },
-      "publish_time": "2026-09-10"
     },
     {
       "capabilities": {
@@ -2184,21 +2549,21 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.18
+            "value": 0.22
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.012
+            "value": 0.015
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.06
+            "value": 0.075
           }
         ]
       },
@@ -2673,21 +3038,21 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.18
+            "value": 0.22
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.012
+            "value": 0.015
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0.06
+            "value": 0.075
           }
         ]
       },
@@ -3746,48 +4111,6 @@
             "currency": "USD",
             "unit": "perMTokens",
             "value": 11.7
-          }
-        ]
-      },
-      "publish_time": "2026-08-07"
-    },
-    {
-      "capabilities": {
-        "reasoning": true
-      },
-      "context_length": 262144,
-      "created": 1786084218,
-      "display_name": "inclusionAI: Ling-3.0-tiny",
-      "id": "inclusionai/ling-3.0-tiny",
-      "input_modalities": [
-        "text"
-      ],
-      "max_tokens": 32768,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "inclusionai",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ],
-        "input_cache_read": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0
           }
         ]
       },
@@ -7300,215 +7623,6 @@
             "currency": "USD",
             "unit": "perMTokens",
             "value": 0.1318155
-          }
-        ]
-      },
-      "publish_time": "2026-04-23"
-    },
-    {
-      "capabilities": {
-        "reasoning": true
-      },
-      "context_length": 1048576,
-      "created": 1776918339,
-      "display_name": "Xiaomi: MiMo-V2.5-Pro",
-      "id": "xiaomi/mimo-v2.5-pro",
-      "input_modalities": [
-        "text"
-      ],
-      "max_tokens": 131072,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "xiaomi",
-      "pricings": {
-        "completion": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gt": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.88
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.88
-          }
-        ],
-        "input_cache_read": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.0037
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.0037
-          }
-        ],
-        "prompt": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.44
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gt": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.44
-          }
-        ],
-        "web_search": [
-          {
-            "currency": "USD",
-            "unit": "perCount",
-            "value": 0.005
-          }
-        ]
-      },
-      "publish_time": "2026-04-23"
-    },
-    {
-      "capabilities": {
-        "reasoning": true
-      },
-      "context_length": 1048576,
-      "created": 1776918280,
-      "display_name": "Xiaomi: MiMo-V2.5",
-      "id": "xiaomi/mimo-v2.5",
-      "input_modalities": [
-        "text",
-        "audio",
-        "image",
-        "video"
-      ],
-      "max_tokens": 131072,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "xiaomi",
-      "pricings": {
-        "completion": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.29
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gt": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.29
-          }
-        ],
-        "input_cache_read": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.0029
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.0029
-          }
-        ],
-        "prompt": [
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gte": 0,
-                "lte": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          },
-          {
-            "conditions": {
-              "prompt_tokens": {
-                "gt": 256,
-                "unit": "kTokens"
-              }
-            },
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.15
-          }
-        ],
-        "web_search": [
-          {
-            "currency": "USD",
-            "unit": "perCount",
-            "value": 0.005
           }
         ]
       },
@@ -12891,48 +13005,6 @@
       "capabilities": {
         "reasoning": true
       },
-      "context_length": 65536,
-      "created": 1764904107,
-      "display_name": "Baidu: ERNIE-X1.1-Preview",
-      "id": "baidu/ernie-x1.1-preview",
-      "input_modalities": [
-        "text"
-      ],
-      "max_tokens": 65536,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "baidu",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.56
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.14
-          }
-        ],
-        "web_search": [
-          {
-            "currency": "USD",
-            "unit": "perCount",
-            "value": 0.0006
-          }
-        ]
-      },
-      "publish_time": "2025-09-08"
-    },
-    {
-      "capabilities": {
-        "reasoning": true
-      },
       "context_length": 1000000,
       "created": 1781165922,
       "display_name": "Qwen: Qwen3 ASR Flash",
@@ -13797,9 +13869,7 @@
       "publish_time": "2025-06-17"
     },
     {
-      "capabilities": {
-        "reasoning": true
-      },
+      "capabilities": {},
       "context_length": 200000,
       "created": 1755177196,
       "display_name": "OpenAI: o4 Mini",
@@ -13809,35 +13879,11 @@
         "text",
         "file"
       ],
-      "max_tokens": 100000,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 4.4
-          }
-        ],
-        "input_cache_read": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.275
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 1.1
-          }
-        ]
-      },
       "publish_time": "2025-04-16"
     },
     {
@@ -13885,9 +13931,7 @@
       "publish_time": "2025-04-14"
     },
     {
-      "capabilities": {
-        "reasoning": false
-      },
+      "capabilities": {},
       "context_length": 1047576,
       "created": 1755177072,
       "display_name": "OpenAI: GPT-4.1 Nano",
@@ -13897,35 +13941,11 @@
         "text",
         "file"
       ],
-      "max_tokens": 32768,
       "object": "model",
       "output_modalities": [
         "text"
       ],
       "owned_by": "openai",
-      "pricings": {
-        "completion": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.4
-          }
-        ],
-        "input_cache_read": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.025
-          }
-        ],
-        "prompt": [
-          {
-            "currency": "USD",
-            "unit": "perMTokens",
-            "value": 0.1
-          }
-        ]
-      },
       "publish_time": "2025-04-14"
     },
     {
