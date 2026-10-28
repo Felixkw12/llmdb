@@ -1833,35 +1833,6 @@
         "responses",
         "messages"
       ]
-    },
-    {
-      "context_length": 1048576,
-      "id": "stepfun/step-5-preview",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "max_completion_tokens": 131072,
-      "object": "model",
-      "output_modalities": [
-        "text"
-      ],
-      "owned_by": "system",
-      "pricing": {
-        "completion": "0.000002700000",
-        "input_cache_read": "0.000000050000",
-        "prompt": "0.000001000000"
-      },
-      "reasoning_efforts": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "supported_endpoints": [
-        "chat",
-        "responses",
-        "messages"
-      ]
     }
   ],
   "object": "list"

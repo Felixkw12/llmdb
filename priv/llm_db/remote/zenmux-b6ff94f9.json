@@ -909,21 +909,21 @@
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0
+            "value": 0.9
           }
         ],
         "input_cache_read": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0
+            "value": 0.06
           }
         ],
         "prompt": [
           {
             "currency": "USD",
             "unit": "perMTokens",
-            "value": 0
+            "value": 0.3
           }
         ]
       },
@@ -2401,8 +2401,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 0,
-                "lt": 272,
+                "gte": "0",
                 "unit": "kTokens"
               }
             },
@@ -2413,7 +2412,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 272,
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
@@ -2426,8 +2425,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 0,
-                "lt": 272,
+                "gte": "0",
                 "unit": "kTokens"
               }
             },
@@ -2438,7 +2436,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 272,
+                "gte": "272",
                 "unit": "kTokens"
               }
             },
@@ -2451,8 +2449,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 0,
-                "lt": 272,
+                "gte": "0",
                 "unit": "kTokens"
               }
             },
@@ -2463,7 +2460,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 272,
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
@@ -2476,8 +2473,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 0,
-                "lt": 272,
+                "gte": "0",
                 "unit": "kTokens"
               }
             },
@@ -2488,7 +2484,7 @@
           {
             "conditions": {
               "prompt_tokens": {
-                "gte": 272,
+                "gt": "272",
                 "unit": "kTokens"
               }
             },
